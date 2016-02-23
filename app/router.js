@@ -6,6 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('type');
+  this.route('forms');
+  this.route('search');
 });
 
 export default Router;

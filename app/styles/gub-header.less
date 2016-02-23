@@ -1,0 +1,44 @@
+.gub-header {
+  //background-color: @brand-primary;
+  background: @brand-primary; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, darken(@brand-primary, 15%), @brand-primary, darken(@brand-primary, 15%)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, darken(@brand-primary, 15%), @brand-primary, darken(@brand-primary, 15%)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, darken(@brand-primary, 15%), @brand-primary, darken(@brand-primary, 15%)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, darken(@brand-primary, 15%), @brand-primary, darken(@brand-primary, 15%)); /* Standard syntax */
+  .navbar-text {
+    color: #fff;
+  }
+  .navbar-header {
+    .navbar-appname {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 22px;
+      color: #fff;
+      padding: 14px 15px 14px 0;
+      height: 50px;
+      float: left;
+      .divider {
+        border-left: 1px solid #fff;
+        margin-right: 14px;
+      }
+    }
+  }
+
+  .navbar-nav li a {
+    color: #fff;
+    &:hover, &:focus {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  .navbar-nav li.active a {
+    background: 0;
+    color: @brand-info;
+    &:hover, &:focus {
+      background: 0;
+      color: @brand-info;
+      text-decoration: underline;
+    }
+  }
+
+}
